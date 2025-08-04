@@ -3,7 +3,9 @@
 import { useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 
-const socket = io('https://next-videocall-backend.vercel.app');
+const socket = io(
+  'https://next-videocall-backend-shoryas-projects-1d9b8b56.vercel.app'
+);
 
 export default function Receiver() {
   const localVideoRef = useRef<HTMLVideoElement | null>(null);
